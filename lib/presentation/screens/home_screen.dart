@@ -19,6 +19,15 @@ class HomeScreen extends StatelessWidget {
             title: const Text('BLoCs'),
             subtitle: const Text('Counter Bloc'),
           ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10), 
+            child: Divider(),
+          ),
+          ListTile(
+            onTap: () => context.push('/register'),
+            title: const Text('Register'),
+            subtitle: const Text('Form Validation'),
+          ),
         ],
       ), 
     );
